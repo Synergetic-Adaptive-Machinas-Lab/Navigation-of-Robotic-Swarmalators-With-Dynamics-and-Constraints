@@ -1,0 +1,24 @@
+%%InitializationVariables
+numBots = 100;
+botRad = 0.1;
+L = 0.2;
+maxV = 1;
+plotXLimit = 20;
+plotYLimit = 20;
+dt = 0.1;
+A = 1;
+B = 10;
+P = 10;
+J = JVariable;
+K = KVariable;
+threshDist = 100;
+c = 1;
+
+% Initialize each bot's location/orientation/phase
+rear(1:numBots, 1:2) = 0;
+center(1:numBots, 1:2) = 0;
+orientation(1:numBots) = 0;
+rotateAngle(1:numBots) = 0;
+phase(1:numBots) = 0;
+currentBotRad(1:numBots) = 0;
+natFreq(1:numBots) = 0;
